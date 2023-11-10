@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straw Cafe</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden; 
+        }
+        header {
+            background: #ffffff; 
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        #menu {
+            display: flex;
+            margin-right: 20px;
+        }
+
+        #menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #menu a:first-child {
+            color: #8B4513; 
+        }
+
+        #menu a:hover {
+            color: #cb3f3f; 
+        }
+
+        #box {
+            background: linear-gradient(90deg, #fff7ad, #ffa9f9); 
+            width: 1200px;
+            height: 340px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #button {
+            background-color: #fff; 
+            color: #333;
+            padding: 15px 150px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #button:hover {
+            background-color: #cb3f3f; 
+            color: #fff;
+        }
+
+        #menuText {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .menuCategory {
+            display: inline-block;
+            margin: 0 30px;
+            text-align: center;
+        }
+
+        .menuImage {
+            margin-top: 20px;
+        }
+        .menuButton {
+            background-color: #fff; 
+            color: #333;
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menuButton:hover {
+            background-color: #cb3f3f; 
+            color: #fff;
+        }
+
+        
+        body {
+            overflow-y: scroll; 
+        }
+        
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        body::-webkit-scrollbar-thumb {
+            background-color: #cb3f3f; 
+            border-radius: 10px;
+        }
+        
+        body::-webkit-scrollbar-track {
+            background-color: #ffffff; 
+        }
+
+        footer {
+            background: linear-gradient(90deg, #fff7ad, #ffa9f9); 
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .menuCategory a {
+            display: inline-block;
+            text-decoration: none;
+            border: 2px solid #cb3f3f;
+            padding: 10px 20px;
+            margin-top: 10px;
+            color: #cb3f3f;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        
+        .menuCategory a:hover {
+            background-color: #cb3f3f;
+            color: #fff;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="logo">Straw Cafe</div>
+        <div id="menu">
+            <button class="menuButton" onclick="window.location.href='#menuCategory'">Home</button>
+            <button class="menuButton" onclick="window.location.href='drink.html'">Drink</button>
+            <button class="menuButton" onclick="window.location.href='food.html'">Food</button>
+            <button class="menuButton" onclick="window.location.href='dessert.html'">Dessert</button>
+        </div>
+    </header>
+
+    <div id="box">
+        <button id="button">Menu Cafe</button>
+    </div>
+    <div id="menuText">
+        <div class="menuCategory">
+            <a href="drink.html">
+                <p>Drink</p>
+                <img src="images/1.jpg" alt="Drink Image" class="menuImage" width="280" height="218">
+            </a>
+        </div>
+        <div class="menuCategory">
+            <a href="food.html">
+                <p>Food</p>
+                <img src="images/2.jpg" alt="Food Image" class="menuImage" width="280" height="218">
+            </a>
+        </div>
+        <div class="menuCategory">
+            <a href="dessert.html">
+                <p>Dessert</p>
+                <img src="images/4.jpg" alt="Dessert Image" class="menuImage" width="280" height="218">
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Contact us at: <a href="Vanessaagtha@cafemenu.com">Vanessaagtha@cafemenu.com</a></p>
+        <p>Visit us at: gatau jalan, Sidoarjo</p>
+    </footer>
+    
+</body>
+</html>
